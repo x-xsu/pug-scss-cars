@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block variables
+  - const title = "404 Страница не найдена";
+
+block content
+  include ../../blocks/modules/header/header
+  // content
+  h1 404 Страница не найдена
+  include ../../blocks/modules/footer/footer
+
+block scripts
+  script(src="js/main.js")
+  script(src="js/vendor.js")
