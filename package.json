@@ -67,7 +67,6 @@
     "webpack-stream": "^7.0.0",
     "yargs": "^17.3.1"
   },
-  "dependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -80,5 +79,6 @@
     "*.js": [
       "eslint --fix"
     ]
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
