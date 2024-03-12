@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Unbounded-Light";
+  src: url($path-fonts + "/Unbounded-Light.woff") format("woff"),
+  url($path-fonts + "/Unbounded-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Unbounded-Regular";
+  src: url($path-fonts + "/Unbounded-Regular.woff") format("woff"),
+  url($path-fonts + "/Unbounded-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Unbounded-Medium";
+  src: url($path-fonts + "/Unbounded-Medium.woff") format("woff"),
+  url($path-fonts + "/Unbounded-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: fallback;
+}

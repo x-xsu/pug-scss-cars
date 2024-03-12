@@ -1,0 +1,10 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%title {
+  font-family: var(--font-title);
+  line-height: var(--lh-title);
+}

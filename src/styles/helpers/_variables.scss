@@ -1,0 +1,43 @@
+// Path
+$path-img: "../img/inhtml/";
+$path-fonts: "../fonts/";
+
+// Color
+$cl-primary: rgb(58 60 53);
+$cl-secondary: rgb(58 60 53 / 50%);
+
+// Fonts
+$font-base: "Unbounded-Light";
+$font-base-regular: "Unbounded-Regular";
+$font-base-light: "Unbounded-Medium";
+
+// Title size
+$title-xs: 32px;
+$title-sm: 100px;
+$title-md: 124px;
+
+// Breakpoints
+$xs: 601px;
+$md: 1024px;
+$lg: 1201px;
+$xl: 1801px;
+
+// Transition
+$duration: 0.3s;
+
+// Root
+:root {
+  // Color
+  --cl-primary: #{$cl-primary};
+  --cl-secondary: #{$cl-secondary};
+
+  // Fonts
+  --font-base: #{$font-base};
+  --font-base-medium: #{$font-base-regular};
+  --font-base-light: #{$font-base-light};
+
+  // Title size
+  --title-xs: #{$title-xs};
+  --title-sm: #{$title-sm};
+  --title-md: #{$title-md};
+}

@@ -1,12 +1,10 @@
 extends ../layouts/default
 
 block variables
-  - const title = "Главная страница";
+  - const title = "Main page";
 
 block content
-  include ../../blocks/modules/header/header
   h1 #{title}
-  include ../../blocks/modules/footer/footer
 
 block scripts
   script(src="js/main.js")
