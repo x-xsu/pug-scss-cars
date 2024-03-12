@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   scrollbar-color: #fff var(--cl-primary);
 }
 
@@ -19,13 +19,25 @@ body {
   background-color: #fff;
   font-family: var(--font-base), sans-serif;
   color: var(--cl-primary);
-  line-height: var(--lh-text);
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding-block-start: $header-height-mobile;
+
+  @media (min-width: $lg) {
+    padding-block-start: $header-height-desktop;
+  }
+}
+
+.container {
+  padding-inline: clamp(16px, 4vw, 60px);
+
+  @media (min-width: $lg) {
+    padding-inline: clamp(60px, 8vw, 120px);
+  }
 }
 
 main {
@@ -56,4 +68,8 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--cl-primary);
   -webkit-box-shadow: 0 0 0 1000px var(--cl-tertiary) inset;
+}
+
+a {
+  transition: $duration;
 }

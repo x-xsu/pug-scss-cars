@@ -2,14 +2,18 @@
 $path-img: "../img/inhtml/";
 $path-fonts: "../fonts/";
 
+// Header
+$header-height-mobile: 60px;
+$header-height-desktop: 132px;
+
 // Color
 $cl-primary: rgb(58 60 53);
 $cl-secondary: rgb(58 60 53 / 50%);
 
 // Fonts
 $font-base: "Unbounded-Light";
-$font-base-regular: "Unbounded-Regular";
-$font-base-light: "Unbounded-Medium";
+$font-medium: "Unbounded-Regular";
+$font-light: "Unbounded-Medium";
 
 // Title size
 $title-xs: 32px;
@@ -23,7 +27,7 @@ $lg: 1201px;
 $xl: 1801px;
 
 // Transition
-$duration: 0.3s;
+$duration: 0.4s;
 
 // Root
 :root {
@@ -33,8 +37,8 @@ $duration: 0.3s;
 
   // Fonts
   --font-base: #{$font-base};
-  --font-base-medium: #{$font-base-regular};
-  --font-base-light: #{$font-base-light};
+  --font-medium: #{$font-medium};
+  --font-light: #{$font-light};
 
   // Title size
   --title-xs: #{$title-xs};

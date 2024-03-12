@@ -1,0 +1,41 @@
+.navigation {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  @media (min-width: $lg) {
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        text-transform: unset;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0;
+          content: '.';
+          color: transparent;
+          background: var(--cl-primary);
+          height: 1px;
+          transition: $duration;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

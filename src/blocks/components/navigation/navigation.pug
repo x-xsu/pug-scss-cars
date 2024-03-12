@@ -1,0 +1,6 @@
+mixin navigation(props)
+  nav.navigation&attributes(attributes)
+    ul
+      each item in props
+        li
+          a(href= item.href)= item.title
