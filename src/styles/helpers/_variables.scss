@@ -7,13 +7,14 @@ $header-height-mobile: 60px;
 $header-height-desktop: 132px;
 
 // Color
+$cl-white: #fff;
 $cl-primary: rgb(58 60 53);
 $cl-secondary: rgb(58 60 53 / 50%);
 
 // Fonts
 $font-base: "Unbounded-Light";
-$font-medium: "Unbounded-Regular";
-$font-light: "Unbounded-Medium";
+$font-medium: "Unbounded-Medium";
+$font-regular: "Unbounded-Regular";
 
 // Title size
 $title-xs: 32px;
@@ -38,7 +39,7 @@ $duration: 0.4s;
   // Fonts
   --font-base: #{$font-base};
   --font-medium: #{$font-medium};
-  --font-light: #{$font-light};
+  --font-regular: #{$font-regular};
 
   // Title size
   --title-xs: #{$title-xs};

@@ -3,7 +3,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: $cl-white;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -12,7 +12,7 @@
 
 html {
   font-size: 16px;
-  scrollbar-color: #fff var(--cl-primary);
+  scrollbar-color: $cl-white var(--cl-primary);
 }
 
 body {

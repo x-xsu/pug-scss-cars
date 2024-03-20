@@ -102,7 +102,7 @@
       justify-content: space-between;
       transform: translate(150%);
       transition: transform $duration ease-in-out;
-      background-color: #fff;
+      background-color: $cl-white;
       text-align: center;
     }
 
@@ -129,7 +129,7 @@
     }
 
     &__contact:hover {
-      color: var(--cl-secondary);
+      @include hoverLinkOpacity;
     }
   }
 }

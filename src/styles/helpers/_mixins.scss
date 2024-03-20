@@ -5,15 +5,13 @@
 }
 
 @mixin hoverLinkOpacity {
-  transition: $duration;
-
   &:hover {
     color: var(--cl-secondary);
   }
 }
 
 %bg {
-  background: top left / auto url($path-img + "bg.png") repeat #fff;
+  background: top left / auto url($path-img + "bg.png") repeat $cl-white;
 }
 
 %title {

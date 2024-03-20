@@ -1,0 +1,51 @@
+//- .fill-white - primary bg mobile, white bg desktop
+//- .border - primary border mobile & desktop
+//- .border-white - primary border mobile, white border desktop
+
+.button {
+  @include flex-center;
+  width: 100%;
+  gap: 12px;
+  height: 44px;
+  padding-inline: 25px;
+  border-radius: 44px;
+  background-color: var(--cl-primary);
+  border: 1px solid var(--cl-primary);
+  color: $cl-white;
+
+  svg {
+    fill: $cl-white;
+    width: 15px;
+    height: 15px;
+  }
+
+  &.border,
+  &.border-white {
+    background-color: transparent;
+    color: var(--cl-primary);
+  }
+
+  &.fill-white {
+    font-family: var(--font-medium);
+  }
+
+  @media (min-width: $lg) {
+    width: auto;
+    background-color: transparent;
+    color: var(--cl-primary);
+
+    svg {
+      fill: var(--cl-primary);
+    }
+
+    &.fill-white {
+      background-color: $cl-white;
+      border-color: $cl-white;
+    }
+
+    &.border-white {
+      border-color: $cl-white;
+      color: $cl-white;
+    }
+  }
+}
