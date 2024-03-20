@@ -60,6 +60,10 @@ address {
   font-style: normal;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 /* Form */
 
 input, textarea, button, select {

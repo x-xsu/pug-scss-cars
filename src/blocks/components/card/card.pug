@@ -1,0 +1,19 @@
+mixin card(props)
+  -
+    const { image, price, title, mileage } = props;
+  .card&attributes(attributes)
+    .card__content
+      img(src=image title=title).card__image
+      .card__info
+        .card__price $#{price}
+        .card__title #{title}
+        .card__box
+          +button({
+            text: `${mileage} miles`,
+            icon: false,
+          }).border-white.card__chips
+          +button({
+            type: "a",
+            text: "Rent",
+            icon: true,
+          }).fill-white

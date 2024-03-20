@@ -41,6 +41,21 @@ a.button,
       transition: inherit;
     }
 
+    &.fill-white {
+      background-color: $cl-white;
+      border-color: $cl-white;
+    }
+
+    &.border-white {
+      border-color: $cl-white;
+      color: $cl-white;
+    }
+  }
+}
+
+a.button,
+button.button {
+  @media (min-width: $lg) {
     &:hover {
       background-color: var(--cl-primary);
       color: $cl-white;
@@ -50,14 +65,8 @@ a.button,
       }
     }
 
-    &.fill-white {
-      background-color: $cl-white;
-      border-color: $cl-white;
-    }
-
-    &.border-white {
-      border-color: $cl-white;
-      color: $cl-white;
+    &.fill-white:hover {
+      background-color: transparent;
     }
   }
 }

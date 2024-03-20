@@ -1,7 +1,7 @@
 mixin button(props)
   -
       const { type, text, icon } = props;
-  #{type}.button&attributes(attributes)
-    span #{text}
+  #{type || "div"}.button&attributes(attributes)
+    span!= text
     if icon
       +icon('arrow')
