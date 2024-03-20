@@ -3,8 +3,8 @@ include props
 include ../../components/navigation/navigation
 
 header.header
-  .header__container
-    .header__title= propsHeader.title
+  .header__container.container
+    .header__title #{propsHeader.title}
     input(type="checkbox").header__checkbox
     .header__hamburger
       span

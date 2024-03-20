@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: clamp(16px, 4vw, 60px);
     border-bottom: 1px solid rgb(58 60 53 / 10%);;
   }
 
@@ -21,6 +20,10 @@
 
   &__contact {
     font-family: var(--font-medium);
+  }
+
+  &__menu {
+    @extend %bg;
   }
 
   @media (max-width: $lg - 1) {

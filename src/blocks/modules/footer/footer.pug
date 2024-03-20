@@ -1,1 +1,17 @@
+include props
+
 footer.footer
+  .footer__container.container
+    .footer__title Cars Classic Autotrader
+    .footer__navigation
+      ul
+        each item in propsFooter.menu
+          li
+            a(href=item.href) #{item.title}
+    .footer__contacts
+      a(href="tel:+1 (701) 581-1331").footer__phone +1 (701) 581-1331
+      .footer__address 161 Trumpeter Ave, Soldotna, Alaska
+    .footer__privacy
+      a(href="#") Privacy Policies
+    .footer__copyright © Cars Classic Autotrader 2024
+

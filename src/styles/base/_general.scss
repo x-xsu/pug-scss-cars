@@ -16,9 +16,10 @@ html {
 }
 
 body {
-  background-color: #fff;
   font-family: var(--font-base), sans-serif;
   color: var(--cl-primary);
+
+  @extend %bg;
 }
 
 .wrapper {
@@ -34,10 +35,6 @@ body {
 
 .container {
   padding-inline: clamp(16px, 4vw, 60px);
-
-  @media (min-width: $lg) {
-    padding-inline: clamp(60px, 8vw, 120px);
-  }
 }
 
 main {
