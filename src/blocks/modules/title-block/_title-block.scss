@@ -1,0 +1,36 @@
+.title-block {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 24px 60px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  @media (min-width: $lg) {
+    &__container {
+      gap: 50px;
+      padding-block: 50px 123px;
+    }
+
+    &__box {
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+
+      p {
+        max-width: 130px;
+        line-height: 1.5;
+      }
+    }
+
+    .title br {
+      display: none;
+    }
+  }
+}

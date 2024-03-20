@@ -2,6 +2,7 @@
 //- .border - primary border mobile & desktop
 //- .border-white - primary border mobile, white border desktop
 
+a.button,
 .button {
   @include flex-center;
   width: 100%;
@@ -33,9 +34,20 @@
     width: auto;
     background-color: transparent;
     color: var(--cl-primary);
+    transition: $duration;
 
     svg {
       fill: var(--cl-primary);
+      transition: inherit;
+    }
+
+    &:hover {
+      background-color: var(--cl-primary);
+      color: $cl-white;
+
+      svg {
+        fill: $cl-white;
+      }
     }
 
     &.fill-white {
