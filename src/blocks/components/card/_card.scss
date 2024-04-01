@@ -2,13 +2,18 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    height: 100%;
   }
 
-  &__image {
+  &__image-box {
     width: 100%;
     aspect-ratio: 6/3.5;
-    object-fit: cover;
+    background-color: $cl-primary;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__info {
@@ -34,7 +39,38 @@
     width: auto;
   }
 
-  @media (min-width: $md) {
+  &--more {
+    .card {
+      &__image-box {
+        @include flex-center;
+        padding-block-end: 50px;
+
+        img {
+          height: auto;
+          width: min(70%, 600px);
+        }
+      }
+
+      @media (max-width: $lg - 1) {
+        &__info {
+          padding-block-start: 0;
+          margin-block-start: -68px;
+        }
+
+        &__box {
+          margin-block-start: 0;
+          gap: 50px;
+        }
+
+        &__chips {
+          border-color: $cl-white;
+          color: $cl-white;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $lg) {
     &__content {
       display: block;
       position: relative;
@@ -75,6 +111,10 @@
         flex-grow: 1;
         flex-basis: 0;
       }
+    }
+
+    &--more .card__content::after {
+      content: none;
     }
   }
 }

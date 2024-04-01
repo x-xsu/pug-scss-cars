@@ -1,19 +1,21 @@
 mixin card(props)
   -
-    const { image, price, title, mileage } = props;
-  .card&attributes(attributes)
+    const { image, price, title, info, more } = props;
+  li.card(class=[more && "card--more"])&attributes(attributes)
     .card__content
-      img(src=image title=title).card__image
+      .card__image-box
+        img(src=image title=title)
       .card__info
-        .card__price $#{price}
-        .card__title #{title}
+        if !more
+          .card__price $#{price}
+          .card__title #{title}
         .card__box
           +button({
-            text: `${mileage} miles`,
+            text: info,
             icon: false,
           }).border-white.card__chips
           +button({
             type: "a",
-            text: "Rent",
+            text: [more ? "All cars" : "Rent"],
             icon: true,
-          }).fill-white
+          })(href="/").fill-white
