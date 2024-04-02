@@ -1,0 +1,32 @@
+.about-numbers {
+  &__container {
+    padding-inline: 16px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__image {
+    width: min(100%, 1410px);
+    margin-block-start: -80px;
+    margin-inline: auto;
+  }
+
+  @media (min-width: $lg) {
+    &__items {
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: $xl) {
+    &__image {
+      margin-block-start: -170px;
+    }
+  }
+}

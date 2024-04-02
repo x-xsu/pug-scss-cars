@@ -1,4 +1,4 @@
 mixin title(props)
   -
     const { level, text } = props;
-  #{level || "div"}.title!= text
+  #{level || "div"}.title&attributes(attributes)!= text

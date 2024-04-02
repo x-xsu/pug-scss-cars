@@ -1,0 +1,41 @@
+.numbers-item {
+  @include flex-center;
+  flex-direction: column;
+  gap: 26px;
+  width: 327px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  border: 1px solid var(--cl-primary);
+
+  &__title {
+    @extend %title;
+    font-size: clamp(64px, 7vw, 90px);
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+
+    span {
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-size: clamp(16px, 4vw, 20px);
+  }
+
+  @media (min-width: $lg) {
+    width: clamp(327px, 60%, 420px);
+
+    &__title {
+      font-size: clamp(90px, 7vw, 140px);
+    }
+
+    &__subtitle {
+      font-size: clamp(20px, 4vw, 24px);
+    }
+  }
+
+  @media (min-width: $xl) {
+    width: clamp(420px, 60%, 586px);
+  }
+}

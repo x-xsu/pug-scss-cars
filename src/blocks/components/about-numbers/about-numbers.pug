@@ -1,0 +1,12 @@
+include props
+
+include ../numbers-item/numbers-item
+
+mixin about-numbers
+  .about-numbers
+    .about-numbers__container
+      ul.about-numbers__items
+        each item in propsAboutNumbers.items
+          +numbers-item(item)
+      .about-numbers__image
+        img(src="img/inhtml/car.png" alt="")
