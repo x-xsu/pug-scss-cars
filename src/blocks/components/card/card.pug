@@ -4,7 +4,7 @@ mixin card(props)
   li.card(class=[more && "card--more"])&attributes(attributes)
     .card__content
       .card__image-box
-        img(src=image title=title)
+        img(src=image alt=title)
       .card__info
         if !more
           .card__price $#{price}

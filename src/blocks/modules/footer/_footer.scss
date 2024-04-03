@@ -46,8 +46,6 @@
     &__container {
       position: relative;
       padding-block: 48px 95px;
-      padding-inline: 0 165px;
-      margin-inline: clamp(16px, 4vw, 60px);
       display: flex;
       align-items: flex-start;
       align-content: space-between;

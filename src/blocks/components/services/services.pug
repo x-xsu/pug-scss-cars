@@ -1,0 +1,9 @@
+include props
+
+include ../services-item/services-item
+
+mixin services
+  .services
+    ul.services__items
+      each item in propsServices.items
+        +services-item(item)

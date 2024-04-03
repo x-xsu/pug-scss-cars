@@ -1,0 +1,8 @@
+mixin services-item(props)
+  -
+    const { image, title } = props;
+  li.services-item
+    a(href="/").services-item__box
+      .services-item__image-box
+        img(src=image alt=title)
+      .services-item__title!= title

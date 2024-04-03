@@ -3,15 +3,16 @@ include props
 include ../../components/navigation/navigation
 
 header.header
-  .header__container.container
-    .header__title #{propsHeader.title}
-    input(type="checkbox").header__checkbox
-    .header__hamburger
-      span
-      span
-      span
-    .header__menu
-      +navigation(propsHeader.menu)
-      a(href="tel:+1(240)375-1288").header__contact +1 (240) 375-1288
+  .header__wrap
+    .header__container.container
+      .header__title #{propsHeader.title}
+      input(type="checkbox").header__checkbox
+      .header__hamburger
+        span
+        span
+        span
+      .header__menu
+        +navigation(propsHeader.menu)
+        a(href="tel:+1(240)375-1288").header__contact +1 (240) 375-1288
 
 
