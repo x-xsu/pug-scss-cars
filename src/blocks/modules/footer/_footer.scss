@@ -8,6 +8,7 @@
 
   &__title {
     @extend %title;
+
     font-size: 14px;
   }
 
@@ -48,8 +49,7 @@
       padding-block: 48px 95px;
       display: flex;
       align-items: flex-start;
-      align-content: space-between;
-      justify-content: space-between;
+      place-content: space-between space-between;
       flex-wrap: wrap;
       row-gap: 80px;
     }
@@ -85,6 +85,7 @@
       top: 132px;
       font-size: 14px;
       margin: 0;
+
       @include hoverLinkOpacity;
     }
 

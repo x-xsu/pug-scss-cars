@@ -43,6 +43,7 @@
     .card {
       &__image-box {
         @include flex-center;
+
         padding-block-end: 50px;
 
         img {
@@ -80,7 +81,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(-1.19deg, rgba(0 0 0 / 70%) 9.168%, rgba(0 0 0 / 0) 57.183%);
+        background: linear-gradient(-1.19deg, rgb(0 0 0 / 70%) 9.168%, rgb(0 0 0 / 0%) 57.183%);
       }
     }
 

@@ -1,5 +1,6 @@
 .numbers-item {
   @include flex-center;
+
   flex-direction: column;
   gap: 26px;
   width: 327px;
@@ -9,6 +10,7 @@
 
   &__title {
     @extend %title;
+
     font-size: clamp(64px, 7vw, 90px);
     display: flex;
     align-items: baseline;

@@ -5,6 +5,7 @@
 a.button,
 .button {
   @include flex-center;
+
   width: 100%;
   gap: 12px;
   height: 44px;

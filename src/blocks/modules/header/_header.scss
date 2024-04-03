@@ -1,5 +1,6 @@
 .header {
   $hamurger-size: 35px;
+
   position: fixed;
   top: 0;
   width: 100%;
@@ -7,6 +8,7 @@
 
   &__wrap {
     @extend %bg;
+
     border-bottom: 1px solid rgb(58 60 53 / 10%);
   }
 
@@ -19,6 +21,7 @@
 
   &__title {
     @extend %title;
+
     font-size: 14px;
   }
 
@@ -40,7 +43,7 @@
       width: calc($hamurger-size * 2);
       opacity: 0;
       cursor: pointer;
-      -webkit-tap-highlight-color: rgb(0 0 0 / 0);
+      -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
     }
 
     &__checkbox:checked ~ &__menu {
