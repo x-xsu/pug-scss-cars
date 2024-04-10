@@ -1,0 +1,15 @@
+include ../../components/qa/qa
+
+section.faq
+  .faq__container.container
+    .faq__content
+      .faq__head
+        +title({ level: "h2", text: "FAQ" })
+        +button({
+          type: "button",
+          text: "Ask a Question",
+          icon: true
+        })
+      .faq__qa
+        +qa
+

@@ -1,0 +1,9 @@
+include props
+
+mixin qa(props)
+  .qa
+    .qa__items
+      each item in propsQa
+        details.qa__item
+          summary.qa__item-head #{item.question}
+          p.qa__item-body #{item.answer}
