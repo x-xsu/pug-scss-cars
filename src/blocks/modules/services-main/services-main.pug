@@ -2,5 +2,10 @@ include ../../components/services/services
 
 section.services-main
   .services-main__container.container
-    +title({level:"h2", text: "Services"})
+    .services-main__head
+      +title({level:"h2", text: "Services"})
+      +button({
+        type: "button",
+        text: "Submit your application",
+      })
     +services

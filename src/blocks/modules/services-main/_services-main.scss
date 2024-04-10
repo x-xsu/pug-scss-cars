@@ -1,1 +1,23 @@
-.services-main {}
+.services-main {
+  &__head {
+    display: contents;
+
+    .button {
+      order: 1;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  @media (min-width: $lg) {
+    &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
